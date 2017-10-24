@@ -1,1 +1,8 @@
-@extends("layouts.template")
+@extends("layouts.template");
+
+
+@section("contenido")
+
+	<p>Probando</p>
+
+@endsection
