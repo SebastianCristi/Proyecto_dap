@@ -76,7 +76,8 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 <body>
   <div class="login">
 	<h1>Ingresar</h1>
-    <form method="post">
+    <form method="post" action="login">
+    	{{ csrf_field() }}
     	<input type="text" name="u" placeholder="Usuario" required="required" />
         <input type="password" name="p" placeholder="Contraseña" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Iniciar Sesión</button>

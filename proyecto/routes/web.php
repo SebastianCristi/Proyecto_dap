@@ -15,8 +15,13 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('panel', 'HomeController@index')->name('dashboard');
+Route::get('panel', function (){
+	return view('dashboard');
+});
 
-Auth::routes();
+Route::post('login', function (){
+	return view('dashboard');
+});
+
 
 Route::get('/home', 'HomeController@index')->name('home');
