@@ -23,5 +23,8 @@ Route::post('login', function (){
 	return view('dashboard');
 });
 
+Route::get("solicitudes", function (){
+	return view('crearSolicitud');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
