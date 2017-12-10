@@ -11,7 +11,7 @@ Tip 2: you can also add an image using data-image tag
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li class="active">
+            <li>
                 <a href="/">
                     <i class="material-icons">dashboard</i>
                     <p>Inicio</p>
@@ -19,7 +19,7 @@ Tip 2: you can also add an image using data-image tag
             </li>
            
             <li>
-                <a href="./table.html">
+                <a href="{{ url::to('solicitudes')}}">
                     <i class="material-icons">content_paste</i>
                     <p>Solicitar insumos</p>
                 </a>
