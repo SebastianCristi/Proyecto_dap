@@ -29,8 +29,9 @@
         Tip 2: you can also add an image using data-image tag
     -->
             <div class="logo">
-                <a href="https://adfs.inacap.cl/adfs/portal/logo/logo.png?id=3AD5E6D06B2E1FA6E6BE583CEE29C34A9F2FF2DD8132BA9D4096B40BDDCD3FD5" class="simple-text">
-                    I.E.I.S.
+                <img src="img/logo.png" alt="" srcset="">
+                <a href="" class="simple-text">
+                   
                 </a>
             </div>
             <div class="sidebar-wrapper">
