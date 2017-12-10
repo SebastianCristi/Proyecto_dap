@@ -1,13 +1,14 @@
 
 
+<body>
+	<div class="wrapper">
 
-@section("barra_superior")
+		@include('layouts.elementos.menuLateral')
+		<div class="main-panel">
+			@include('layouts.elementos.barraSuperior')
 
-@endsection
+			@yield("contenido")
 
-@section("barra_lateral")
-
-@endsection
-
-@yield("contenido")
-
+		</div>
+	</div>
+</body>
