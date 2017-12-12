@@ -24,6 +24,8 @@
 
 html { width: 100%; height:100%; overflow:hidden; }
 
+
+
 body { 
 	width: 100%;
 	height:100%;
@@ -39,17 +41,17 @@ body {
 .login { 
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 80%;
 	margin: -150px 0 0 -150px;
 	width:300px;
 	height:300px;
 }
-.login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+.login h1 { color: #fff; text-shadow: 0 0 10px rgba(1,1,1,0.4); letter-spacing:1px; text-align:center; }
 
 input { 
 	width: 100%; 
 	margin-bottom: 10px; 
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.2);
 	border: none;
 	outline: none;
 	padding: 10px;
@@ -73,8 +75,10 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 </head>
 
-<body>
-  <div class="login">
+<body style="background: url(img/inacapLogin.jpg) no-repeat; background-size: 100%; " >
+
+  <div class="login" style="width:350; height:350; text-align:rigth; float: right; padding: 15px;border-radious: 10px 10px 10px 10px; border: 1px solid gray; background-color: rgba(1,1,1,0.4); margin-left: 0 	px; ">
+ 
 	<h1>Ingresar</h1>
     <form method="post" action="login">
     	{{ csrf_field() }}
@@ -82,8 +86,8 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
         <input type="password" name="p" placeholder="Contraseña" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Iniciar Sesión</button>
     </form>
-</div>
-  
+
+  </div>
     <script  src="js/index.js"></script>
 
 </body>
