@@ -1,10 +1,5 @@
 @extends('layouts.template')
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 5c037b71caa042614c155c0cbb8f4aba62ac3527
 @section("contenido")
     <div class="content">
         <div class="container-fluid">
@@ -18,11 +13,7 @@
                             <p class="category">Solicitudes activas</p>
                             <h3 class="title">0/0</h3>
                         </div>
-<<<<<<< HEAD
-                        
 
-=======
->>>>>>> 5c037b71caa042614c155c0cbb8f4aba62ac3527
                     </div>
                 </div>
 
