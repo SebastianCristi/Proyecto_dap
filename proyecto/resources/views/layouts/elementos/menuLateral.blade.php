@@ -5,10 +5,6 @@ Tip 1: You can change the color of the sidebar using: data-color="purple | blue 
 Tip 2: you can also add an image using data-image tag
 -->
     <div class="logo">
-
-        <a href="#" class="simple-text">
-        </a>
-        
         <a href="#" class="simple-text"></a>
         <img src="img/logo.png" alt="" srcset="">
     </div>
