@@ -5,9 +5,14 @@ Tip 1: You can change the color of the sidebar using: data-color="purple | blue 
 Tip 2: you can also add an image using data-image tag
 -->
     <div class="logo">
+<<<<<<< HEAD
         <a href="#" class="simple-text">
         </a>
         <img src="img/logo.png">
+=======
+        <a href="#" class="simple-text"></a>
+        <img src="img/logo.png" alt="" srcset="">
+>>>>>>> 5c037b71caa042614c155c0cbb8f4aba62ac3527
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
@@ -34,18 +39,6 @@ Tip 2: you can also add an image using data-image tag
                 <a href="./icons.html">
                     <i class="material-icons">bubble_chart</i>
                     <p>Revisar solicitudes</p>
-                </a>
-            </li>
-            <li>
-                <a href="./maps.html">
-                    <i class="material-icons">location_on</i>
-                    <p>Maps</p>
-                </a>
-            </li>
-            <li>
-                <a href="./notifications.html">
-                    <i class="material-icons text-gray">notifications</i>
-                    <p>Notifications</p>
                 </a>
             </li>
         </ul>
