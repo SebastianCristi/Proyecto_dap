@@ -1,5 +1,6 @@
 @extends('layouts.template')
 
+
 @section("contenido")
     <div class="content">
         <div class="container-fluid">
@@ -13,7 +14,6 @@
                             <p class="category">Solicitudes activas</p>
                             <h3 class="title">0/0</h3>
                         </div>
-                        
 
                     </div>
                 </div>

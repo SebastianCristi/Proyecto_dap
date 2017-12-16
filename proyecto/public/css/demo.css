@@ -1,3 +1,7 @@
+.formulario label{
+    padding-right: 5px;
+}
+
 @media (min-width: 992px) {
     .typo-line {
         padding-left: 140px;
