@@ -35,18 +35,6 @@ Tip 2: you can also add an image using data-image tag
                     <p>Revisar solicitudes</p>
                 </a>
             </li>
-            <li>
-                <a href="./maps.html">
-                    <i class="material-icons">location_on</i>
-                    <p>Maps</p>
-                </a>
-            </li>
-            <li>
-                <a href="./notifications.html">
-                    <i class="material-icons text-gray">notifications</i>
-                    <p>Notifications</p>
-                </a>
-            </li>
         </ul>
     </div>
 </div>
