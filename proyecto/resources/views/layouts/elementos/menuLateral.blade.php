@@ -11,7 +11,7 @@ Tip 2: you can also add an image using data-image tag
     <div class="sidebar-wrapper">
         <ul class="nav">
             <li>
-                <a href="/">
+                <a href="{{URL::to('panel')}}">
                     <i class="material-icons">dashboard</i>
                     <p>Inicio</p>
                 </a>

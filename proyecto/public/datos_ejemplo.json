@@ -1,0 +1,35 @@
+[
+	{
+		"login": {
+			"usuarios":
+			[
+				{
+					"id": "1",
+					"nombre": "Juan Donoso",
+					"usuario": "j.donoso",
+					"contraseña": "pruebas",
+					"tipo": "profesor"
+				},
+				{
+					"id": "2",
+					"nombre": "Johan Kramer",
+					"usuario": "j.kramer",
+					"contraseña": "pruebas",
+					"tipo": "profesor"
+				},
+				{
+					"id": "3",
+					"nombre": "Pedro Alvarez",
+					"usuario": "p.alvarez",
+					"contraseña": "pruebas",
+					"tipo": "admin"
+				}
+			]
+				 
+
+			
+			
+
+		}
+	}
+]

@@ -55,7 +55,7 @@
                         <div class="card-header" data-background-color="purple">
                             <div class="nav-tabs-navigation">
                                 <div class="nav-tabs-wrapper">
-                                    <span class="nav-tabs-title">Solicitudes:</span>
+                                    <span class="nav-tabs-title">Solicitudes de insumos:</span>
                                     <ul class="nav nav-tabs" data-tabs="tabs">
                                         <li class="active">
                                             <a href="#profile" data-toggle="tab">
@@ -87,12 +87,10 @@
                                         <thead class="text-warning"> 
                                             <tr>                                                
                                                 <th></th>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>ID</th>
+                                                <th>Asignatura</th>
+                                                <th>Horario</th>
+                                                <th>Estado</th>
                                                 <th>Editar</th>
                                                 <th>Eliminar</th>
                                             </tr>
@@ -108,12 +106,11 @@
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td>Michael Bruce</td>
-                                                <td>Javascript Developer</td>
-                                                <td>Singapore</td>
-                                                <td>29</td>
-                                                <td>2011/06/27</td>
-                                                <td>$183,000</td>
+                                                <td>3</td>
+                                                <td>Javascript</td>
+                                                <td>5436
+                                                <td>2011/06/27 13:20</td>
+                                                <td>Por aprobar</td>
                                                 <td>
                                                     <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-simple btn-xs">
                                                         <i class="material-icons">edit</i>
@@ -132,12 +129,11 @@
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td>Donna Snider</td>
-                                                <td>Customer Support</td>
-                                                <td>New York</td>
-                                                <td>27</td>
-                                                <td>2011/01/25</td>
-                                                <td>$112,000</td>
+                                                <td>3</td>
+                                                <td>Javascript</td>
+                                                <td>5436
+                                                <td>2011/06/27 13:20</td>
+                                                <td>Por aprobar</td>
                                                 <td>
                                                 
                                                  <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-simple btn-xs">

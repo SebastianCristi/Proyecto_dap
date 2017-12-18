@@ -12,19 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('login')->with('msg','');
 });
 
 Route::get('panel', function (){
 	return view('dashboard');
 });
 
-Route::post('login', function (){
-	return view('dashboard');
-});
+Route::post('login', 'login@iniciarSesion');
 
 Route::get("solicitudes", function (){
-	return view('crearSolicitud');
+	return view('crearSolicitud')->with('msg','');
 });
+
+Route::post('solicitaInsumos', 'solicitudes@crearInsumos');
 
 Route::get('/home', 'HomeController@index')->name('home');
