@@ -8,6 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Control inventario - INACAP - Alpha') }}</title>
+    {{session_start()}}
 
 
     @include("layouts.includes")

@@ -29,4 +29,16 @@ class login extends Controller
 
     	return Redirect::back()->withErrors(['Usuario o contraseña incorrectos']);
     }
+
+    public function cerrarSesion(){
+        session_start();
+
+        // Destruir todas las variables de sesión.
+        $_SESSION = array();
+
+        session_destroy();
+
+        return Redirect::to(' ');
+    }
+
 }

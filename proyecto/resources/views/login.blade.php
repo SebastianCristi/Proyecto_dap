@@ -9,11 +9,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-
+  {{session_start()}}
 </head>
 
 <body >
-@if(session_status() == PHP_SESSION_NONE)
+@if( count($_SESSION))
   {!! \Redirect::to('panel')!!}
 
 @endif

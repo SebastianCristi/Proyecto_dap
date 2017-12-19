@@ -28,3 +28,6 @@ Route::get("solicitudes", function (){
 Route::post('solicitaInsumos', 'solicitudes@crearInsumos');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('logout','login@cerrarSesion');
