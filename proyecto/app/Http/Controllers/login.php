@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Redirect;
+use Session;
+use DB;
+
+use App\usuario;
+
 
 class login extends Controller
 {
@@ -13,21 +18,23 @@ class login extends Controller
     	$logInfo = file_get_contents('datos_ejemplo.json');
     	$json = json_decode($logInfo, true);
 
-    	$user = $request->input('user');
-    	$pass = $request->input('pass');
+        $user = $request->input('user');
+        $pass = $request->input('pass');
 
-    	for($i = 0; $i < sizeof($json[0]['login']['usuarios']); $i++){
-    		if($json[0]['login']['usuarios'][$i]['usuario'] == $user)
-    			if($json[0]['login']['usuarios'][$i]['contraseña'] == $pass){
-    				session_start();
-    				$_SESSION['user'] = $user;
-    				$_SESSION['nombre'] = $json[0]['login']['usuarios'][$i]['nombre'];
-    				$_SESSION['tipo'] = $json[0]['login']['usuarios'][$i]['tipo'];
-    				return Redirect::to('panel');
-    			}
-    	}
 
-    	return Redirect::back()->withErrors(['Usuario o contraseña incorrectos']);
+    	$usuario = usuario::where(['usuario'=>$user, 'password'=>$pass])->first();
+            
+            if(!is_null($usuario))
+                {
+                    Session::start();
+                    Session::put('user', $user);
+                    Session::put('nombre', $usuario['nombre']);
+                    Session::put('tipo',  $usuario['tipo']);
+                    Session::put('userid',  $usuario['id']);
+                    return Redirect::to('panel');
+                }
+
+
     }
 
     public function cerrarSesion(){

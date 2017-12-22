@@ -9,6 +9,7 @@ Tip 2: you can also add an image using data-image tag
         <img src="img/logo.png" alt="" srcset="">
     </div>
     <div class="sidebar-wrapper">
+        @if(Session::get('tipo') == 'profesor')
         <ul class="nav">
             <li>
                 <a href="{{URL::to('panel')}}">
@@ -23,18 +24,44 @@ Tip 2: you can also add an image using data-image tag
                     <p>Solicitar insumos</p>
                 </a>
             </li>
+
+
             <li>
-                <a href="./typography.html">
-                    <i class="material-icons">library_books</i>
-                    <p>Mis solicitudes</p>
+                <a href="{{ url::to('solicitudSemestral')}}">
+                    <i class="material-icons">date_range</i>
+                    <p>Solicitud semestral</p>
                 </a>
             </li>
-            <li>
-                <a href="./icons.html">
-                    <i class="material-icons">bubble_chart</i>
-                    <p>Revisar solicitudes</p>
-                </a>
-            </li>
+
+
         </ul>
+        @elseif(Session::get('tipo') == 'Admin')
+            <ul class="nav">
+            <li>
+                <a href="{{URL::to('panel')}}">
+                    <i class="material-icons">dashboard</i>
+                    <p>Inicio</p>
+                </a>
+            </li>
+           
+            <li>
+                <a href="{{ url::to('solicitudesAdmin')}}">
+                    <i class="material-icons">content_paste</i>
+                    <p>Revisar Solicitudes insumos</p>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="{{ url::to('solicitudSemestralAdmin')}}">
+                    <i class="material-icons">date_range</i>
+                    <p>Revisar Solicitudes semestrales</p>
+                </a>
+            </li>
+
+
+        </ul>
+        @endif
+
     </div>
 </div>

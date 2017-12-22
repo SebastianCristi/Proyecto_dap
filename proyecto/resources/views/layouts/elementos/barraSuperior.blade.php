@@ -1,4 +1,5 @@
 <nav class="navbar navbar-transparent navbar-absolute">
+
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse">
@@ -7,7 +8,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Panel principal - {{$_SESSION['nombre']}} </a>
+                        <a class="navbar-brand" href="#"> {{Session::get('nombre')}} </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">

@@ -29,7 +29,7 @@
         <button type="submit" class="btn btn-primary btn-block btn-large">Iniciar Sesión</button>
         @if($errors->any())
               <div style="color: white; text-align: center; padding-top: 5px;">
-                 <strong>{{$errors->first()}}</strong>
+                 <strong>{{$errors}}</strong>
               </div>
           @endif
     </form>
